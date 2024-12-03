@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "9d8a86a6-b004-4796-8cf4-b70bbb65813b",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34388846"
+	},
+	"item": [
+		{
+			"name": "retrive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/task/3/",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"task",
+						"3",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/task/3/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"task",
+								"3",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 14:24:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "408"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"helloworld\",\n    \"task\": \"app.tasks.print_hello\",\n    \"args\": \"[]\",\n    \"kwargs\": \"{}\",\n    \"queue\": null,\n    \"exchange\": null,\n    \"routing_key\": null,\n    \"headers\": \"{}\",\n    \"priority\": null,\n    \"expires\": null,\n    \"expire_seconds\": null,\n    \"one_off\": false,\n    \"start_time\": null,\n    \"enabled\": false,\n    \"last_run_at\": null,\n    \"total_run_count\": 0,\n    \"date_changed\": \"2024-12-03T14:09:40.488046Z\",\n    \"description\": \"\",\n    \"interval\": 1,\n    \"crontab\": null,\n    \"solar\": null,\n    \"clocked\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"enabled\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/task/3/",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"task",
+						"3",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"enabled\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/task/3/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"task",
+								"3",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 14:25:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "408"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"helloworld\",\n    \"task\": \"app.tasks.print_hello\",\n    \"args\": \"[]\",\n    \"kwargs\": \"{}\",\n    \"queue\": null,\n    \"exchange\": null,\n    \"routing_key\": null,\n    \"headers\": \"{}\",\n    \"priority\": null,\n    \"expires\": null,\n    \"expire_seconds\": null,\n    \"one_off\": false,\n    \"start_time\": null,\n    \"enabled\": false,\n    \"last_run_at\": null,\n    \"total_run_count\": 0,\n    \"date_changed\": \"2024-12-03T14:25:13.449430Z\",\n    \"description\": \"\",\n    \"interval\": 1,\n    \"crontab\": null,\n    \"solar\": null,\n    \"clocked\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "400-dublicate name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"helloworld\",\r\n    \"task\": \"app.tasks.print_hello\",\r\n    \"args\": \"[]\",\r\n    \"kwargs\": \"{}\",\r\n    \"queue\": null,\r\n    \"exchange\": null,\r\n    \"routing_key\": null,\r\n    \"headers\": \"{}\",\r\n    \"priority\": null,\r\n    \"expires\": null,\r\n    \"expire_seconds\": null,\r\n    \"one_off\": false,\r\n    \"start_time\": null,\r\n    \"enabled\": false,\r\n    \"last_run_at\": null,\r\n    \"total_run_count\": 0,\r\n    \"date_changed\": \"2024-12-03T14:25:13.449430Z\",\r\n    \"description\": \"\",\r\n    \"interval\": 1,\r\n    \"crontab\": null,\r\n    \"solar\": null,\r\n    \"clocked\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/task/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"task",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 14:25:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": [\n        \"periodic task with this Name already exists.\"\n    ]\n}"
+				},
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"helloworld1\",\r\n    \"task\": \"app.tasks.print_hello\",\r\n    \"args\": \"[]\",\r\n    \"kwargs\": \"{}\",\r\n    \"queue\": null,\r\n    \"exchange\": null,\r\n    \"routing_key\": null,\r\n    \"headers\": \"{}\",\r\n    \"priority\": null,\r\n    \"expires\": null,\r\n    \"expire_seconds\": null,\r\n    \"one_off\": false,\r\n    \"start_time\": null,\r\n    \"enabled\": false,\r\n    \"last_run_at\": null,\r\n    \"total_run_count\": 0,\r\n    \"date_changed\": \"2024-12-03T14:25:13.449430Z\",\r\n    \"description\": \"\",\r\n    \"interval\": 1,\r\n    \"crontab\": null,\r\n    \"solar\": null,\r\n    \"clocked\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/task/",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"task",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 14:26:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "409"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"helloworld1\",\n    \"task\": \"app.tasks.print_hello\",\n    \"args\": \"[]\",\n    \"kwargs\": \"{}\",\n    \"queue\": null,\n    \"exchange\": null,\n    \"routing_key\": null,\n    \"headers\": \"{}\",\n    \"priority\": null,\n    \"expires\": null,\n    \"expire_seconds\": null,\n    \"one_off\": false,\n    \"start_time\": null,\n    \"enabled\": false,\n    \"last_run_at\": null,\n    \"total_run_count\": 0,\n    \"date_changed\": \"2024-12-03T14:26:08.753618Z\",\n    \"description\": \"\",\n    \"interval\": 1,\n    \"crontab\": null,\n    \"solar\": null,\n    \"clocked\": null\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
